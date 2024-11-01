@@ -1,6 +1,6 @@
 try:
     from distutils.version import LooseVersion
-except ImportError:
+except (ImportError, ModuleNotFoundError):
     from setuptools.distutils.version import LooseVersion
 
 from django.conf import settings
